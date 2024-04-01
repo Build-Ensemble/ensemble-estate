@@ -113,7 +113,7 @@ const LandingPage = () => {
                             key={index} 
                             color={color} 
                             baseHeight={100 + index * 50} 
-                            delay={getRandomNumber(3000, 6000)}
+                            delay={getRandomNumber(2000, 6000)}
                         />
                         ))}
                 </Box>

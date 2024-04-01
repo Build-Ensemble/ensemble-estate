@@ -11,7 +11,7 @@ const App = () => {
       <CssBaseline />
         <AppBar color="default" position="sticky">
           <Toolbar>
-            <a href="https://ensemble.estate/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}>
+            <a href="https://www.ensemble.estate/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}>
               <Box component="img" sx={{ height: 32 }} src={logo} alt="Company Logo" />
               <Typography variant="h6" component="div" sx={{ marginLeft: 1 }}>
                 Ensemble

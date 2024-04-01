@@ -63,6 +63,9 @@ import React, { useState, useEffect } from 'react';
 const Shape = ({ color, baseHeight, delay }) => {
     const [isExpanded, setIsExpanded] = useState(false);
     useEffect(() => {
+        setIsExpanded(true)
+    },[])
+    useEffect(() => {
             const interval = setInterval(() => {
                 setIsExpanded(prevIsExpanded => !prevIsExpanded); // Toggle the state
             }, delay); // Adjust the time as needed for faster or slower animation
