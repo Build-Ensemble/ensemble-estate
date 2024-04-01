@@ -101,7 +101,7 @@ const LandingPage = () => {
                 <Box 
                     sx={{ 
                         position: 'relative', 
-                        height: '330px', 
+                        height: { xs: '60%', md:'30%'}, 
                         display: 'flex', 
                         justifyContent: 'space-evenly',
                         // justifyContent: { xs: 'flex-start', md: 'center'}, 
