@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { AppBar, Toolbar, Typography, Box, useScrollTrigger, CssBaseline, Slide } from '@mui/material';
+import LandingPage from './LandingPage';
+import GetInTouch from './GetInTouch';
+import logo from './assets/ensemble-logo.png';
+import Footer from './Footer';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <CssBaseline />
+        <AppBar color="default" position="sticky">
+          <Toolbar>
+            <a href="https://ensemble.estate/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}>
+              <Box component="img" sx={{ height: 32 }} src={logo} alt="Company Logo" />
+              <Typography variant="h6" component="div" sx={{ marginLeft: 1 }}>
+                Ensemble
+              </Typography>
+            </a>
+          </Toolbar>
+        </AppBar>
+      <LandingPage />
+      <GetInTouch />
+      <Footer />
+    </React.Fragment>
   );
-}
+};
 
 export default App;

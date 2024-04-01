@@ -1,0 +1,35 @@
+/* GetInTouch.css */
+
+.get-in-touch-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .get-in-touch-container h1 {
+    margin-bottom: 20px;
+  }
+  
+  .get-in-touch-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .get-in-touch-container input,
+  .get-in-touch-container textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .get-in-touch-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
