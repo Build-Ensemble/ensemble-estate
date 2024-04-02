@@ -10,12 +10,7 @@ import Typewriter from 'typewriter-effect';
 
 const LandingPage = () => {
     // const [activeShape, setActiveShape] = useState(-1); // Start before the first shape
-    const scrollToBottom = () => {
-        window.scrollTo({
-        top: document.documentElement.scrollHeight,
-        behavior: 'smooth', // Enables smooth scrolling
-        });
-    };
+
     const getRandomNumber = (min, max) => {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
@@ -57,7 +52,8 @@ const LandingPage = () => {
 
                     <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'left', gap: 2 }}>
                         <Button
-                            onClick={scrollToBottom}
+                            href="https://zcal.co/i/cI3ccdVR"
+                            target="_blank"
                             variant="contained"
                             color="primary"
                             sx={{
@@ -65,7 +61,7 @@ const LandingPage = () => {
                             alignSelf: 'center', // Centers the button when the parent is a flex container
                             }}
                         >
-                            Get In Touch!
+                            Learn More
                         </Button>
                         <a href="https://www.nextcanada.com/" target="_blank" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}>
                             <Box sx={{
